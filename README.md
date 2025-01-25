@@ -3,6 +3,8 @@
 ## Overview
 Space Wars is a simple 2D space shooter game built using Python and Pygame. The player controls a spaceship and must shoot down enemies while avoiding collisions.
 
+![game](image.png)
+
 ## Installation
 1. Ensure you have Python installed on your system.
 2. Install Pygame by running:
