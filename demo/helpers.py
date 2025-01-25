@@ -3,7 +3,7 @@ from pygame import image, Surface
 from pygame.font import Font
 import math
 
-def check_collision(enemy_x: int, enemy_y: int, bullet_x: int, bullet_y: int):
+def check_collision(enemy_x: int, enemy_y: int, bullet_x: int, bullet_y: int) -> bool:
     """
     Check if the bullet collides with the enemy by calculating the distance 
     between their coordinates. If the distance is smaller than a threshold, 
@@ -19,7 +19,7 @@ def check_collision(enemy_x: int, enemy_y: int, bullet_x: int, bullet_y: int):
     return distance < 27
 
 
-def show_score(screen: Surface, score: int, font: Font):
+def show_score(screen: Surface, score: int, font: Font) -> None:
     """
     Render the current score on the screen.
     """
@@ -34,7 +34,7 @@ def show_score(screen: Surface, score: int, font: Font):
     screen.blit(score_text, (10, 10))
 
 
-def game_over_text(screen: Surface, font: Font):
+def game_over_text(screen: Surface, font: Font) -> None:
     """
     Display a "GAME OVER" message on the screen when the player loses.
     """
@@ -49,7 +49,7 @@ def game_over_text(screen: Surface, font: Font):
     screen.blit(over_text, (200, 250))
 
 
-def game_init():
+def game_init() -> tuple:
     """
     Initialize the pygame library and set up the game window and background.
 
