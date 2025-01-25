@@ -49,7 +49,7 @@ def game_over_text(screen: Surface, font: Font) -> None:
     screen.blit(over_text, (200, 250))
 
 
-def game_init() -> tuple:
+def game_init() -> tuple[Surface, Surface]:
     """
     Initialize the pygame library and set up the game window and background.
 
