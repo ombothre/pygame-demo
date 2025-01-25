@@ -87,7 +87,7 @@ class Bullet:
         Draws the bullet on the screen if it is in the "fire" state (meaning it has been fired).
         """
         if self.state == "fire":
-            self.screen.blit(self.img, (self.x + 6, self.y + 4))  # Draw the bullet image at the current position.
+            self.screen.blit(self.img, (self.x + 16, self.y + 10))  # Draw the bullet image at the current position.
 
 
 class Enemy:
