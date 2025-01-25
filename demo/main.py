@@ -90,7 +90,7 @@ while running:
     pygame.display.update()  # Update the screen to reflect changes made in this frame.
 
 # Wait for a few seconds after the game ends before quitting.
-time.sleep(5)
+time.sleep(2)
 
 # Quit pygame and close the game window.
 pygame.quit()

@@ -68,4 +68,4 @@ def game_init() -> tuple[Surface, Surface]:
     pygame.display.set_icon(pygame_icon)
     
     # Return both the screen and background to be used in the game loop.
-    return screen, background
+    return (screen, background)
