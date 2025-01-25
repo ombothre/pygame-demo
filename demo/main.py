@@ -32,6 +32,7 @@ while running:
     # Event handling: Check for user input (key presses) and system events (like closing the window).
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
+            exit()  # Exit the game if the player closes the window.
             running = False  # Stop the game loop if the window is closed.
         
         # Check for key presses (player input)

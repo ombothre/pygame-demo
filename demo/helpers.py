@@ -62,6 +62,10 @@ def game_init():
     
     # Load the background image for the game.
     background = image.load('assets/images/background.png')
+
+    # Set the game icon (optional)
+    pygame_icon = pygame.image.load('assets/images/ufo.png')
+    pygame.display.set_icon(pygame_icon)
     
     # Return both the screen and background to be used in the game loop.
     return screen, background
