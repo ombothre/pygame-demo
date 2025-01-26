@@ -32,13 +32,10 @@ while running:
             running = False  # Exit the game if the player closes the window.
         
         if event.type == pygame.KEYDOWN:
-            if event.key == pygame.K_LEFT:
-                player.move('left')  # Move the player left if the left arrow key is pressed.
-            if event.key == pygame.K_RIGHT:
-                player.move('right')  # Move the player right if the right arrow key is pressed.
-            if event.key == pygame.K_SPACE:
-                bullet.fire(player.x)  # Fire a bullet if the spacebar is pressed.
-        
+            # Move the player left if the left arrow key is pressed.
+            # Move the player right if the right arrow key is pressed.
+            # Fire a bullet if the spacebar is pressed.
+            pass
         if event.type == pygame.KEYUP:
             if event.key in (pygame.K_LEFT, pygame.K_RIGHT):
                 player.stop_move()  # Stop the player when arrow keys are released.
